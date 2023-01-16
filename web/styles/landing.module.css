@@ -2,7 +2,7 @@
     @apply flex justify-center py-4 text-pink-mauvelous text-[50px];
   }
 
-  .subTitle {
+.subTitle {
     @apply flex justify-center py-4 text-cyan text-[30px];
   }
   

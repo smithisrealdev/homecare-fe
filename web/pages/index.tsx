@@ -1,5 +1,3 @@
-import Header from '@/components/common/layout/Header';
-import Layout from '@/components/common/layout/Layout';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';

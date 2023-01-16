@@ -3,9 +3,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint-plugin-cypress": "^2.12.1",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",

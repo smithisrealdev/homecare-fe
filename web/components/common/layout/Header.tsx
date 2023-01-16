@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import styles from './Layout.module.css';
+import styles from '@styles/Layout.module.css';
 import { FaNapster, FaSignOutAlt, FaUserAlt } from 'react-icons/fa';
 
 const Header = () => {
