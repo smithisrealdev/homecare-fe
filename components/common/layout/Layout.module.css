@@ -1,0 +1,7 @@
+.header {
+    @apply w-full bg-pink-paradise fixed h-16 transition z-[3];
+  }
+.rightHeader{
+  @apply flex mt-2 mr-2 justify-end text-white ;
+}
+  
