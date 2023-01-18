@@ -36,7 +36,7 @@ module.exports = {
         indigo: '#1f3870',
         dark: '#313c8a',
         lavender: '#CDDEFA',
-        jordy: '#91B4ED',
+        jordy: '#a4d0f5',
         yonder: '#4471AD',
         royal: '#4072DE',
         'lapis-lazuli': '#33689E',
@@ -82,7 +82,11 @@ module.exports = {
         'rose-vale': '#AB5252',
         'fuzzy-wuzzy': '#C96D6D',
       },
-      'african-violet': '#A883C7',
+      violet: {
+        bloom: '#ae93c4',
+        blossom: '#bf8aeb',
+        juizy: '#a96ec2',
+      },
       white: { DEFAULT: '#fff', 'anti-flash': '#EDF1F3', azureish: '#DFECED', cultured: '#F5F7F8' },
       black: '#000',
       status: {

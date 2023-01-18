@@ -9,6 +9,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "eslint-plugin-cypress": "^2.12.1",
+    "framer-motion": "^8.4.6",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
