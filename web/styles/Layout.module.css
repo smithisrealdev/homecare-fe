@@ -9,12 +9,11 @@
   @apply flex mt-2 mr-24 justify-center text-white ;
 }
   
-  
 .outlineButton{
   @apply border w-[150px] h-[40px] rounded rounded-[24px] border-white hover:bg-pink-mauvelous;
 }
 
 .inlineButton{
-  @apply  w-[150px] h-[40px] rounded rounded-[24px] hover:bg-violet-blossom;
+  @apply   h-[40px] rounded rounded-[24px] hover:bg-violet-blossom;
 }
   

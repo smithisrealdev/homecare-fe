@@ -1,8 +1,8 @@
 .title {
-    @apply flex font-bold justify-center py-4 text-pink-mauvelous text-[50px];
+    @apply flex font-bold justify-center py-4 text-pink-mauvelous text-[60px];
   }
 
 .subTitle {
-    @apply flex font-bold justify-center py-4 text-cyan text-[30px];
+    @apply flex justify-center py-4 text-cyan text-[30px];
   }
   

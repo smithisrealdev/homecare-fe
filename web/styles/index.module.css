@@ -10,10 +10,10 @@
 }
 
 .inlineButton{
-  @apply  w-[150px] h-[40px] rounded rounded-[24px] hover:bg-violet-blossom;
+  @apply  h-[40px] rounded rounded-[24px] hover:bg-blue-lavender ;
 }
   
 
 .card{
-    @apply block p-10  border border-white rounded-lg  hover:bg-violet-bloom;
+    @apply  p-10  border border-white rounded-3xl hover:cursor-pointer  hover:bg-blue-jordy;
 }

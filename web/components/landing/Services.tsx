@@ -1,7 +1,7 @@
 import Card from '@components/common/card';
+import { SERVICES_LIST } from '@constants/dataMock';
 import { motion } from 'framer-motion';
-import { PropsWithChildren } from 'react';
-import styles from './Component.module.css';
+import { Fragment, PropsWithChildren } from 'react';
 
 type ComponentPropsType = PropsWithChildren<{
   /**
@@ -17,38 +17,40 @@ type ComponentPropsType = PropsWithChildren<{
  * @returns
  */
 const Services = ({}: ComponentPropsType) => {
-  const variants = {
-    hidden: { opacity: 0, x: -200, y: 0 },
-    enter: { opacity: 1, x: 0, y: 0 },
-    exit: { opacity: 0, x: 0, y: -100 },
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
   };
-  const feature = ['feature', 'feature', 'feature', 'feature', 'feature', 'feature'];
+
+  const variantsUl = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div>
-      {feature.map((item, index) => (
-        <div className="my-4 mx-4 ">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-              hidden: {
-                scale: 0.8,
-                opacity: 0,
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: 0.4,
-                },
-              },
-            }}
-          >
-            <Card title={item} simple={false} />
-          </motion.div>
-        </div>
-      ))}
-    </div>
+    <Fragment>
+      <div className="grid grid-cols-2 gap-4">
+        {SERVICES_LIST.map((item, index) => (
+          <div key={index} className="my-4 mx-4 flex justify-center w-[100%]">
+            <motion.ul className="container" variants={container} initial="hidden" animate="visible">
+              <motion.li key={index} className="item" variants={variantsUl}>
+                <Card title={item?.title} content={item?.Description} height={500} iconName={item?.icon} />
+              </motion.li>
+            </motion.ul>
+          </div>
+        ))}
+      </div>
+    </Fragment>
   );
 };
 
